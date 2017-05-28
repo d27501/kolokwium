@@ -1,0 +1,15 @@
+[2017-05-28 16:59:22.407] [INFO] InputFileResolver - Found 1 of 2 file(s) to be mutated.
+[2017-05-28 16:59:22.417] [INFO] SandboxCoordinator - Starting initial test run. This may take a while.
+[2017-05-28 16:59:23.202] [INFO] Stryker - Initial test run succeeded. Ran 3 tests in 0 seconds.
+[2017-05-28 16:59:23.242] [INFO] Stryker - 37 Mutant(s) generated
+[2017-05-28 16:59:23.261] [INFO] SandboxCoordinator - Creating 4 test runners (based on CPU count)
+Mutation testing  [====================] 100% (ETC 0.0s)[35 killed] [0 survived] [0 no coverage] [2 timeout] [0 error]
+
+37 total mutants.
+0 mutants survived.
+2 mutants timed out.
+35 mutants killed.
+Ran 1.22 tests per mutant on average.
+Mutation score based on covered code: 100.00%
+Mutation score based on all code: 100.00%
+[2017-05-28 16:59:32.466] [INFO] Stryker - Done in 10 seconds.
