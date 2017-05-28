@@ -1,0 +1,26 @@
+[2017-05-28 16:56:03.244] [INFO] InputFileResolver - Found 1 of 2 file(s) to be mutated.
+[2017-05-28 16:56:03.260] [INFO] SandboxCoordinator - Starting initial test run. This may take a while.
+[2017-05-28 16:56:03.963] [INFO] Stryker - Initial test run succeeded. Ran 3 tests in 0 seconds.
+[2017-05-28 16:56:04.010] [INFO] Stryker - 37 Mutant(s) generated
+[2017-05-28 16:56:04.041] [INFO] SandboxCoordinator - Creating 4 test runners (based on CPU count)
+Mutation testing  [====================] 100% (ETC 0.0s)[34 killed] [1 survived] [0 no coverage] [2 timeout] [0 error]
+
+Mutant survived!
+C:\git\kolokwium\app\app.js: line 9:47
+Mutator: BinaryOperator
+-           if((typeof numbers[i] == 'number') && (numbers[i] > 0)){
++           if((typeof numbers[i] == 'number') && (numbers[i] >= 0)){
+
+Tests ran:
+    getMessage When parameter is ok and contains perfect number(s) should return object which contains biggest perfect number and a message
+    getMessage When parameter is ok and doesn't contain perfect numbers should return object which contains info about not finding perfect numbers
+    getMessage When parameter is not ok should throw Error('Argument is wrong or not a number!')
+
+37 total mutants.
+1 mutants survived.
+2 mutants timed out.
+34 mutants killed.
+Ran 1.22 tests per mutant on average.
+Mutation score based on covered code: 97.30%
+Mutation score based on all code: 97.30%
+[2017-05-28 16:56:13.401] [INFO] Stryker - Done in 10 seconds.

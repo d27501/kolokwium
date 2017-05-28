@@ -3,9 +3,16 @@
     "version": "1.0.0",
     "devDependencies": {
         "chai": "3.5.0",
-        "mocha": "3.2.0"
+        "mocha": "3.2.0",
+        "stryker": "0.5.9",
+        "stryker-api": "0.4.2",
+        "stryker-html-reporter": "0.3.0",
+        "stryker-mocha-runner": "0.2.0",
+        "istanbul": "0.4.5"
     },
     "scripts": {
-        "test": "node_modules/.bin/mocha --opts tests/mocha.opts"
+        "test": "node_modules/.bin/mocha --opts test/mocha.opts",
+        "stryker": "stryker run stryker.conf.js",
+        "coverage": "node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha -- --recursive -R spec"
     }
 }

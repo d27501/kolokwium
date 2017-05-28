@@ -15,6 +15,9 @@ describe('getMessage', function () {
                 expect(app.getMessage([100, 6, 496, 81])).to.eql({has_Perfect_Numbers: true, biggest: 496,
                     message: 'Argument contains 2 perfect number(s) and the biggest one is 496'});
 
+                expect(app.getMessage([496,8128, 6 ])).to.eql({has_Perfect_Numbers: true, biggest: 8128,
+                    message: 'Argument contains 3 perfect number(s) and the biggest one is 8128'});
+
             })
         })
 
@@ -37,6 +40,8 @@ describe('getMessage', function () {
             expect(function(){app.getMessage([-1, 0, -10, -496])}).to.throw('Argument is wrong or not a number!');
             expect(function(){app.getMessage([6, '496'])}).to.throw('Argument is wrong or not a number!');
             expect(function(){app.getMessage([5, 10, 15, ''])}).to.throw('Argument is wrong or not a number!');
+
+            expect(function(){app.getMessage([0])}).to.throw('Argument is wrong or not a number!');
 
         });
     })
