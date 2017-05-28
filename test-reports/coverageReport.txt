@@ -1,0 +1,28 @@
+> kolokwium@1.0.0 coverage C:\git\kolokwium
+> istanbul cover ./node_modules/mocha/bin/_mocha -- --recursive -R spec
+
+
+
+  getMessage
+    When parameter is ok
+      and contains perfect number(s)
+        √ should return object which contains biggest perfect number and a message
+      and doesn't contain perfect numbers
+        √ should return object which contains info about not finding perfect numbers
+    When parameter is not ok
+      √ should throw Error('Argument is wrong or not a number!')
+
+
+  3 passing (36ms)
+
+=============================================================================
+Writing coverage object [C:\git\kolokwium\coverage\coverage.json]
+Writing coverage reports at [C:\git\kolokwium\coverage]
+=============================================================================
+
+=============================== Coverage summary ===============================
+Statements   : 100% ( 21/21 )
+Branches     : 100% ( 10/10 )
+Functions    : 100% ( 2/2 )
+Lines        : 100% ( 21/21 )
+================================================================================
